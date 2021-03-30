@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Company Logo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="src/images/logo.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a href="#" class="logo"><img src="src/images/logo.png" /></a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"
+            ><span class="navicon"></span
+          ></label>
+          <a href="#form" class="chat"><img src="src/images/ic_msg.png" /></a>
+          <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <button class="btn-contact">
+                <img src="src/images/ic_msg.png" class="icon-btn" />Get in Touch
+              </button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- top-section -->
+      <section
+        class="banner-wrapper"
+        style="background-image: url('src/images/header-bg.png');"
+      >
+        <div class="container">
+          <h1>Integer bibendum sit amet arcu vel egestas.</h1>
+
+          <div class="card">
+            <div class="card-item">
+              <img src="src/images/team.png" alt="service-image" />
+              <p>Service Name</p>
+            </div>
+            <div class="card-item">
+              <img src="src/images/service2.png" alt="service-image" />
+              <p>Service Name</p>
+            </div>
+            <div class="card-item">
+              <img src="src/images/service.png" alt="service-image" />
+              <p>Service Name</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Connecting-world section -->
+      <section class="connecting-world">
+        <div class="container">
+          <div class="world-description">
+            <h1>
+              Mauris id bibendum est.Proin dapibus sollicitudin iaculis,
+              Maecanaus condimentum maximus laoreet
+            </h1>
+            <p>
+              Donec dignissim diam finibus dictum fringilla. Aenean vel diam
+              libero. Mauris blandit congue sollicitudin. . Fusce tincidunt
+              posuere est non ele Lorem ipsum dolor sit amet . Fusce tincidunt
+              posuere est non ele Lorem ipsum dolor sit amet
+            </p>
+          </div>
+          <figure>
+            <img src="src/images/social-world.png" alt="social-world" />
+          </figure>
+        </div>
+      </section>
+      <!-- testimonial section -->
+      <section class="testimonial-section">
+        <div class="container">
+          <h1>Testimonials</h1>
+          <div class="testinomial-wrapper">
+            <div>
+              <p>
+                <img src="src/images/quotes.png" />Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s,
+              </p>
+              <div>
+                <figure>
+                  <img src="src/images/ic-user.png" alt="ic-user" />
+                </figure>
+                <span class="client-wrapper"
+                  ><span class="client-name">Client Name</span
+                  ><span class="position">Position, ORG</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="hide-show">
+              <p>
+                <img src="src/images/quotes.png" />Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s,
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s.
+              </p>
+              <div>
+                <figure>
+                  <img src="src/images/ic-user.png" alt="ic-user" />
+                </figure>
+                <span class="client-wrapper"
+                  ><span class="client-name">Client Name</span
+                  ><span class="position">Position, ORG</span></span
+                >
+              </div>
+            </div>
+            <div class="hide-show">
+              <p>
+                <img src="src/images/quotes.png" />Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s,
+              </p>
+              <div>
+                <figure>
+                  <img src="src/images/ic-user.png" alt="ic-user" />
+                </figure>
+                <span class="client-wrapper"
+                  ><span class="client-name">Client Name</span
+                  ><span class="position">Position, ORG</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact form start -->
+      <section
+        class="contact-wrapper"
+        style="background-image: url('src/images/footer-bg.png');"
+      >
+        >
+        <div class="container">
+          <div class="contact-sec" id="form">
+            <h1>Conviced to work with us?</h1>
+            <p>
+              Company has helped agencies keep their promises to clients 2021.
+            </p>
+            <form>
+              <div class="fields-wrapper">
+                <div class="input-fields">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Full name"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Full name'"
+                  />
+                </div>
+                <div class="input-fields">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email address"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Email address'"
+                  />
+                </div>
+                <div class="input-fields">
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone number"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Phone number'"
+                  />
+                </div>
+              </div>
+              <div class="text-wrap">
+                <textarea>Message</textarea>
+              </div>
+            </form>
+            <button type="button">Submit</button>
+          </div>
+        </div>
+        <!-- container -->
+      </section>
+      <!-- contact form end -->
+
+      <!-- Footer start-->
+      <footer>
+        <div class="container">
+          <div class="copyright content-center">
+            <p style="font-size: 14px;">
+              &copy; 2021 Company. All Rights Reserved.
+            </p>
+          </div>
+          <div class="content-center">
+            <p style="font-size: 14px;">Follow us on:</p>
+            <div class="social-icon">
+              <a href="#" class=""><img src="src/images/fb.png" /></a>
+            </div>
+            <div class="social-icon">
+              <a href="#" class=""><img src="src/images/in.png" /></a>
+            </div>
+
+            <div class="social-icon">
+              <a href="#" class=""><img src="src/images/tw.png" /></a>
+            </div>
+            <div class="social-icon">
+              <a href="mailto:ganieadnan10@gmail.com" class=""
+                ><img src="src/images/email.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer end-->
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+.common-testimonial {
+	width: 90%;
+	max-width: 375px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.testimonial-section {
+	.testinomial-wrapper {
+		.hideshow{
+			display: block;
+		}
+		div {
+			width: 90%;
+			max-width: 375px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			div {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				figure {
+					margin-right: 15px;
+					display: inline-block;
+				}
+				.client-wrapper {
+					display: inline-block;
+					.client-name {
+						display: block;
+						font-size: 20px;
+						color: #171513;
+					}
+					.position {
+						display: block;
+						font-size: 16px;
+						color: #887b77;
+					}
+				}
+			}
+			p {
+				position: relative;
+				border: 2px solid #c5c5c5;
+				border-radius: 7px;
+				margin-bottom: 30px;
+				font-size: 16px;
+				color: #81736f;
+				padding: 25px 20px;
+				background: #fff;
+				&:before {
+					position: absolute;
+					top: 3px;
+					right: auto;
+					bottom: auto;
+					left: 16px;
+					content: "";
+					width: 24px;
+					height: 21px;
+				}
+				&:after {
+					position: absolute;
+					top: auto;
+					right: auto;
+					bottom: -15px;
+					left: 80px;
+					content: "";
+					width: 20px;
+					height: 28px;
+					border-left: 2px solid #c5c5c5;
+					border-bottom: 2px solid #c5c5c5;
+					background: #fff;
+					transform: rotate(-56deg);
+				}
+			}
+		}
+	}
+	padding: 40px 0;
+	background: #f7f7f7;
+	h1 {
+		font-size: 28px;
+		color: #171513;
+		text-align: center;
+	}
+}
+.common-profiles {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	figure {
+		margin-right: 15px;
+		display: inline-block;
+	}
+	.client-wrapper {
+		display: inline-block;
+		.client-name {
+			display: block;
+			font-size: 20px;
+			color: #171513;
+		}
+		.position {
+			display: block;
+			font-size: 16px;
+			color: #887b77;
+		}
+	}
+}
+
+
+
+@media (min-width: 991px) {
+
+	.common-testimonial {
+		width: 26%;
+	}
+	.testimonial-section {
+		.testinomial-wrapper {
+			
+			div {
+				width: 26%;
+			}
+		
+			display: flex;
+			justify-content: space-between;
+		}
+		padding: 85px 0;
+		
+	}
+}
+/*on Mobile device*/
+@media screen and (max-width: 550px) {
+	.testinomial-wrapper div p{
+		font-size: 15px;
+	}
+	.testinomial-wrapper .hide-show{
+		display: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.testinomial-wrapper .hide-show{
+		display: inline;
+	}
+}

@@ -1,0 +1,228 @@
+
+.header {
+	background: #171513;
+	box-shadow: 1px 1px 4px 0 rgba(65, 24, 24, 0.1);
+	position: fixed;
+	width: 100%;
+	color: white;
+	z-index: 3;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+		background: #171513;
+	}
+	li {
+		a {
+			display: block;
+			padding: 20px 20px;
+      color: white;
+			text-decoration: none;
+			&:hover {
+				background-color: #3b3737;
+			}
+		}
+	}
+	.menu-btn {
+		&:hover {
+			background-color: #3b3737;
+		}
+		display: none;
+		&:checked~.menu {
+			max-height: 240px;
+		}
+		&:checked~.menu-icon {
+			.navicon {
+				background: transparent;
+				&:before {
+					transform: rotate(-45deg);
+				}
+				&:after {
+					transform: rotate(45deg);
+				}
+			}
+			&:not(.steps) {
+				.navicon {
+					&:before {
+						top: 0;
+					}
+					&:after {
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+	.logo {
+		display: block;
+		float: left;
+		font-size: 2em;
+		padding: 10px 20px;
+		text-decoration: none;
+	}
+	.menu {
+		clear: both;
+		max-height: 0;
+		background: #171513;
+		transition: max-height .2s ease-out;
+	}
+	.menu-icon {
+		cursor: pointer;
+		float: left;
+		padding: 28px 20px;
+		position: relative;
+		user-select: none;
+		.navicon {
+			background: #e53901;
+			display: block;
+			height: 2px;
+			position: relative;
+			transition: background .2s ease-out;
+			width: 18px;
+			&:before {
+				background: #e53901;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: 5px;
+			}
+			&:after {
+				background: #e53901;
+				content: '';
+				display: block;
+				height: 100%;
+				position: absolute;
+				transition: all .2s ease-out;
+				width: 100%;
+				top: -5px;
+			}
+		}
+	}
+}
+.menu {
+	li {
+		a {
+      color: white;
+      font-size: 16px !important;
+		}
+		button {
+			transition: all 0.3s ease-in-out;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			display: inline-block;
+			padding: 18px 28px 18px 28px;
+			border-radius: 30px;
+			font-weight: 700;
+			font-size: 16px;
+			background: #e53901;
+			border: 2px solid transparent;
+			color: #ffffff;
+			text-transform: capitalize;
+			.icon-btn {
+				width: 16px;
+				transition: all 0.3s ease-in-out;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-ms-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				height: 15px;
+				margin-right: 8px;
+				vertical-align: -4px;
+				background-position: -117px 0;
+			}
+			&:hover {
+				color: #e53901;
+				background: transparent;
+				border: 2px solid #e53901;
+				.icon-btn {
+					background-position-y: -17px;
+				}
+			}
+		}
+	}
+}
+.logo {
+	color: white;
+}
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+	outline: none;
+}
+@media (min-width: 768px) {
+	.menu {
+		li {
+			button {
+				width: 171px;
+				padding: 5px 0;
+				margin-top: 12px;
+			}
+		}
+	}
+	.header {
+		li {
+			float: left;
+			a {
+				padding: 20px 30px;
+			}
+		}
+		.menu {
+			clear: none;
+			float: right;
+			max-height: none;
+		}
+		.menu-icon {
+			display: none;
+		}
+		.chat {
+			display: none;
+		}
+	}
+}
+@media screen and( max-width:768px) {
+	.header {
+		.logo {
+			display: block;
+			right: 100px;
+			float: right;
+			position: relative;
+			text-decoration: none;
+		}
+		.logo {
+			display: flex;
+			justify-content: center;
+	}
+	}
+	.chat {
+		display: block;
+		img {
+			position: relative;
+			float: right;
+			top: 16px;
+			left: 170px;
+			font-size: 2em;
+			padding: 10px 20px;
+			text-decoration: none;
+		}
+	}
+	.menu {
+		li {
+			button {
+				padding: 8px 16px 8px 16px;
+				margin-bottom: 10px;
+				margin-left: 10px;
+				display: none;
+			}
+		}
+	}
+	.btn-contact {
+		margin-top: 10px;
+	}
+}
